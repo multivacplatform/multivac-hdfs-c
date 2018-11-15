@@ -1,4 +1,4 @@
-# multivac-hdfs-c [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://github.com/multivacplatform/multivac-hdfs-c/blob/master/LICENSE)
+# multivac-hdfs-c [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/multivacplatform/multivac-hdfs-c/blob/master/LICENSE)
 
 ## Code of Conduct
 
@@ -6,4 +6,4 @@ This, and all github.com/multivacplatform projects, are under the [Multivac Plat
 
 ## Copyright and License
 
-Code and documentation copyright (c) 2018 [ISCPIF - CNRS](http://iscpif.fr). Code released under the [Apache license](https://github.com/multivacplatform/multivac-hdfs-c/blob/master/LICENSE).
+Code and documentation copyright (c) 2018 [ISCPIF - CNRS](http://iscpif.fr). Code released under the [Apache 2.0 license](https://github.com/multivacplatform/multivac-hdfs-c/blob/master/LICENSE).
