@@ -1,4 +1,4 @@
-# multivac-hdfs-c
+# multivac-hdfs-c [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://github.com/multivacplatform/multivac-hdfs-c/blob/master/LICENSE)
 
 ## Code of Conduct
 
