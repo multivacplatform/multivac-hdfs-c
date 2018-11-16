@@ -1,4 +1,4 @@
-# Compile c/c++ Against native Hadoop library on Cloudera
+# Compile c/c++ against native Hadoop library on Cloudera
 
 ```bash
 # Optional
