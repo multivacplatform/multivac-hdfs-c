@@ -2,13 +2,12 @@
 #include <stdio.h>
 #include <sstream>
 #include <fstream>
-#include <iostream>
 #include <getopt.h>
 #include <list>
 #include <random>
 #include <iostream>
 #include <cstring>
-#include <iostream>
+#include <stdlib.h>
 
 #include "hdfs.h"
 
@@ -35,8 +34,7 @@ tSize write_file(std::string filename)
 }
 
 int main(int argc, char **argv)
-{
-
+{	
 	std::string filename;
 	std::cin >> filename;
 	if (filename == "")
