@@ -45,7 +45,7 @@ res4: Array[Unit] = Array((), (), ())
 
 ## Important Note
 
-In YARN cluster/client mode, if the `C/C++` or any exeternal application needs access to HDFS, the following items must be set properly in order to execute the YARN container as the same user in Spark to have the right permissions on HDFS directories (otherwise, the user will be either `yarn` or `nbody`):
+1. In YARN cluster/client mode, if the `C/C++` or any exeternal application needs access to HDFS, the following items must be set properly in order to execute the YARN container as the same user in Spark to have the right permissions on HDFS directories (otherwise, the user will be either `yarn` or `nbody`):
 
 ```
 yarn.nodemanager.container-executor.class
@@ -53,3 +53,5 @@ yarn.nodemanager.container-executor.class
 yarn.nodemanager.linux-container-executor.nonsecure-mode.limit-users
 ```
 https://hadoop.apache.org/docs/r3.0.0/hadoop-yarn/hadoop-yarn-site/NodeManagerCgroups.html
+
+2. To not interfere with Apache Spark and other components of Hadoop it's best to set env variables via bash script (ex: `run_c.sh`) 
