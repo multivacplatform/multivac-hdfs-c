@@ -18,7 +18,7 @@ g++ -o compiled/cpp_exe main.cpp -std=c++11 -I/opt/cloudera/parcels/CDH/include/
 Simple Spark/Scala snippets of how to run a compiled `C/C++` which receives some paths and writes `Hello Wordl!` in those paths.
 
 ```scala
-# Add the file to all executors in YARN
+// Add the file to all executors in YARN
 val distScript = "hdfs:///tmp/cpp_exe"
 sc.addFile(distScript)
 
