@@ -26,9 +26,14 @@ import sys.process._
 import java.nio.file.{ Paths, Files }
 
 var inputs_points  = sc.parallelize(List("/user/YOUR_USERNAME/tmp/file.txt","/user/YOUR_USERNAME/tmp/file2.txt","/user/YOUR_USERNAME/tmp/file3.txt"))
-
-val exe_path = inputs_points.pipe(Seq("./cpp_exe"))
-
+// To access HDFS CLASSPATH and LD_LIBRARY_PATH must be set on all executors
+var env_map = Map(
+    "CLASSPATH" -> "hadoop classpath --glob".!!,
+    "LD_LIBRARY_PATH" -> "/usr/lib/jvm/java-8-oracle/jre/lib/amd64/server:/opt/cloudera/parcels/CDH/lib/"
+)
+// Important: Run Spark RDD Pipe() with env option
+val exe_path = inputs_points.pipe(command = Seq("./cpp_exe"),
+                                  env = env_map)
 exe_path.collect().map(println(_))
 
 ```
