@@ -1,4 +1,4 @@
-# multivac-hdfs-c [![GitHub license](https://img.shields.io/badge/license-AGPL%20v3-orange.svg)](https://github.com/multivacplatform/multivac-hdfs-c/blob/master/LICENSE)
+# multivac-hdfs-c [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/multivacplatform/multivac-hdfs-c/blob/master/LICENSE)
 
 ## Code of Conduct
 
@@ -6,4 +6,4 @@ This, and all github.com/multivacplatform projects, are under the [Multivac Plat
 
 ## Copyright and License
 
-Code and documentation copyright (c) 2018 [ISCPIF - CNRS](http://iscpif.fr). Code released under the [AGPL v3 license](https://github.com/multivacplatform/multivac-hdfs-c/blob/master/LICENSE).
+Code and documentation copyright (c) 2018 [ISCPIF - CNRS](http://iscpif.fr). Code released under the [MIT license](https://github.com/multivacplatform/multivac-hdfs-c/blob/master/LICENSE).
